@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Asul', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.imagedisplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.kids,.clothes,.shoes{
+    flex:1;  
+}
+.box{
+    
+    background-color: burlywood;
+    height: 66px;
+}
+.box ul{
+    overflow: hidden;
+}
+.box li{
+    float: left;
+    list-style: none;
+    margin: 13px , 20px;
+    margin-top: 20px;
+}
+
+.box li a{
+    padding: 30px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(12, 12, 11);
+    margin:0 auto;
+    
+}
+.box li a:hover{
+    color: darkred;
+    cursor: pointer;
+}
+
+
+.box input{
+    border: 3px solid burlywood;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+    overflow-y: hidden;
+    outline: none;
+}
+.search{
+    float: right;
+    padding: 12px ;
+    color: rgb(2, 2, 2);
+   
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 500px;
+}
+
+.slideshowcontainer{
+   margin-right: 20px;
+   position: relative;
+}
+.slidenumber{
+    display: none;
+}
+.text{
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 120px;
+    border: 1px solid burlywood;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.text:hover {
+    background-color: #e7b957;
+}
+.container{
+    float: left;
+    background-color: white;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Asul', sans-serif;
+}
+.item{
+   margin: 12px 3px;
+   padding: 12px ;
+   background-color: burlywood;  
+   border-radius: 6px; 
+}
+
+
+/*footer css*/
+
+.page-footer {
+    color: #111110;
+    background:  burlywood;
+    border-top:1px solid #fffbfb;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content{
+    display: flex;
+    padding-top:20px;
+    margin-right: 10px;
+    margin-left:10px;
+}
+
+.footer-content h2 {
+    color: #000000;
+}
+
+.footer-content .site-logo{
+    width: 100%;
+}
+.footer-content span{
+    display: block;
+    user-select: none;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.footer-section-about{
+    flex:1.3;
+    margin-left: 10px;
+    text-justify: newspaper;
+    font-size: 18px;
+    width: 100%;
+}
+.footer-section-about .socials i {
+    width: 45px;
+    color: #000000;
+    height: 41px;
+    padding-top:5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    transition: all .3s;
+}
+.footer-section-about .socials i:hover {
+    color: rgb(91, 163, 230);
+}
+
+.footer-section-links,
+.footer-section-contactform{
+    flex:1;
+}
+.footer-section-links{
+    margin-left:0px; 
+    text-align: center;
+}
+.footer-section-links a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+.footer-section-links a:hover  {
+    color:rgb(219, 223, 224);
+}
+.footer-section-links li {
+        list-style: none;
+        padding-bottom: 10px;
+}
+
+.footer-section-contactform{
+    text-align: center;
+}
+.footer-section-contactform input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.footer-section-contactform textarea{
+    width: 100%;
+    padding: 20px;
+    outline: none;
+}
+
+.footer-section-contactform select{
+    padding: 10px;
+}
+.btn{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    line-height: 1.2rem;
+    float: right;
+    cursor: pointer;
+}
+
+ .footer-bottom
+{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    opacity: 0.8;
+}
+
+#country {
+    outline:none ;
+}
+
+/* Css for tablets and mobile phones */
+@media (max-width:940px){
+
+    .imagedisplay{
+        display: none;
+    }
+    .main-section{
+        display: block;
+        height: 800px;
+    }
+
+    .container{
+        margin-top: 100px;
+    }
+
+
+    .footer-content{
+        display: block;
+    }
+
+    .footer-bottom{
+        display: none;
+    }
+
+    .btn{
+        margin-top: -40px;
+    }
+}
